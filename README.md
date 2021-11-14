@@ -15,3 +15,10 @@ DOMAIN=your_domain_name
 - Express.js
 - Handlebars
 
+# Links
+- [API Documentation](https://stripe.com/docs/api)
+- [Live Preview](https://stripe-payment.ferilsunu.me)
+
+# Credits
+- [UI](https://codepen.io/davidkpiano/pen/VLmxGb)
+
