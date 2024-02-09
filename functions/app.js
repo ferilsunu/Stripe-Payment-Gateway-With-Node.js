@@ -4,6 +4,7 @@ const app = express();
 const path = require('path');
 const dotenv = require('dotenv');
 const hbs = require('express-handlebars');
+const router = express.Router();
 
 dotenv.config();
 
@@ -22,5 +23,7 @@ app.set('view engine', 'handlebars');
 
 app.use('/', indexRoute);
 app.use('/checkout', checkoutRoute);
+
+app.use('/.netlify/functions/app',router);
 
 module.exports.handler = serverless(app);
